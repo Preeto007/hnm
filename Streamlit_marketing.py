@@ -84,12 +84,3 @@ def generate_marketing_mail():
 if __name__ == "__main__":
     generate_marketing_mail()
 
-# COMMAND ----------
-
-import os
-os.environ["STREAMLIT_SERVER_PORT"] = "8888"
-os.environ["STREAMLIT_SERVER_ADDRESS"] = "0.0.0.0"
-
-# COMMAND ----------
-
-!streamlit run /databricks/python_shell/scripts/PythonShell.py --server.port 8888
